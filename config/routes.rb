@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
 
- bookings_controller
   resources :actors
   resources :bookings, :only => [:new, :create, :destroy]
 
