@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<%= @cocktail.name %>
+<%= cl_image_path @cocktail.image %>">
+<%= link_to actor.name, actor_path(actor) %>
+<%= cl_image_tag actor.image %>
+<%= actor.age %>
+<%= actor.sex %>
+<%= actor.location %>
+<%= actor.bio %>
+<%= actor.category %>
+<%= actor.price %>
+<%= link_to 'Edit', edit_actor_path(@actor) %>...
+<%= link_to 'Back', actors_path %>
