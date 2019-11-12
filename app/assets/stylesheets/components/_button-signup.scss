@@ -1,5 +1,4 @@
-.btn.signup {
-  background-color: #EC7859;
+.btn.standard {
   border-color: #F9CB7B;
   display: flex;
   margin: 10px;
@@ -16,7 +15,87 @@
   border-sizing: border-box;
   border-radius: 100px;
 
-  &:hover{
+  &.signup
+    { background-color: $orange;
+    &.hover{
     background: #F9CB7B;
+    }
   }
 }
+
+.btn.standard {
+  background-color: $light-purple;
+  border-color: $purple-boder;
+  display: flex;
+  margin: 10px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px;
+  border-sizing: border-box;
+  border-radius: 100px;
+
+  &.logout
+  { background-color: $purple;
+    &.hover{
+    background: #957D9E;
+  }
+  }
+}
+
+.btn.standard {
+
+  border-color: $purple-boder;
+  display: flex;
+  margin: 10px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px;
+  border-sizing: border-box;
+  border-radius: 100px;
+
+  &.logout { background-color: $light-purple;
+  &.hover {
+    background: #957D9E;
+    }
+  }
+}
+
+.btn.standard {
+  background-color: $light-purple;
+  border-color: $purple-boder;
+  display: flex;
+  margin: 10px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px;
+  border-sizing: border-box;
+  border-radius: 100px;
+
+  &.login { background-color: $light-purple;
+    &.hover {
+    background: #957D9E;
+    }
+  }
+}
+
