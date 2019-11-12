@@ -2,8 +2,7 @@
 
 <%= @actor.name %>
 <%# cl_image_path @actor.image %>
-<%= link_to "#{@actor.name}", actor_path(@actor) %>
-<%= cl_image_tag @actor.image %>
+<%= cl_image_tag @actor.image, height: 300, width: 250, crop: :fill %>
 <%= @actor.age %>
 <%= @actor.sex %>
 <%= @actor.location %>
@@ -11,4 +10,5 @@
 <%= @actor.category %>
 <%= @actor.price %>
 
-<%= link_to 'Back', actors_path %>
+<%= link_to 'Back', actors_path  %>
+<%= link_to 'Book', new_actor_booking_path(@actor)  %>
