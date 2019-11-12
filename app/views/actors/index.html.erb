@@ -1,15 +1,30 @@
 <p id="notice"><%= notice %></p>
 
-<% @actors.each do |actor| %>
-  <%= link_to actor.name, actor_path(actor) %>
-  <%= cl_image_tag actor.image, height: 200, width: 200, crop: :fill %>
-  <%= actor.age %>
-  <%= actor.sex %>
-  <%= actor.location %>
-  <%= actor.bio %>
-  <%= actor.category %>
-  <%= actor.price %>
-<% end %>
+<div class="container">
+<div class="row">
+  <% @actors.each do |actor| %>
+  <div class="col-3 s12 m7">
+    <%= link_to actor_path(actor) do  %>
+    <div class="card">
+      <div class="card-image" style="background-image: url(<%= actor.image %>);">
+      </div>
+      <div class="card-content">
+        <ul class="list">
+          <li><%= actor.name %></li>
+          <li><%= actor.age %></li>
+          <li><%= actor.sex %></li>
+          <li><%= actor.location %></li>
+          <li><%=  actor.bio %></li>
+          <li><%= actor.category %></li>
+          <li><%=  actor.price %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <% end %>
+  <% end %>
+</div>
+</div>
 
 
 

@@ -1,0 +1,26 @@
+* {
+  text-decoration: none !important;
+}
+
+.card {
+  margin-bottom: 50px;
+  border-radius: 30px;
+  color: black;
+
+}
+
+.card li {
+  list-style-type: none;
+}
+
+
+.card-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+}
+
+.card-title {
+  color: red;
+}
