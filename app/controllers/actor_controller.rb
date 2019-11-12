@@ -45,5 +45,3 @@ class ActorController < ApplicationController
     params.require(:actor).permit(:name, :age, :sex, :location, :bio, :price, :category, :image)
   end
 end
-
-end

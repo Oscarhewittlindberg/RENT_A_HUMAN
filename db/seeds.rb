@@ -68,7 +68,7 @@ puts 'Creating bookings'
 
 Booking.create!(title: "Need a boyfriend", actor: boyfriend, renter:peter , date: Date.today + 5.days, duration: 2)
 Booking.create!(title: "Need a mother", actor: mother, renter:lars , date: Date.today + 3.days, duration: 3)
-Booking.create!(title: "Need a sister", actor: sisters, renter:nick , date: Date.today + 8.days, duration: 6)
+Booking.create!(title: "Need a sister", actor: sister, renter:nick , date: Date.today + 8.days, duration: 6)
 Booking.create!(title: "Need a housekeeper", actor: housekeeper, renter:amanda , date: Date.today + 9.days, duration: 7)
 Booking.create!(title: "Need a girlfriend", actor: girlfriend, renter:dick , date: Date.today + 1.days, duration: 1)
 Booking.create!(title: "Need a brother", actor: brother, renter:erika , date: Date.today + 3.days, duration: 2)
