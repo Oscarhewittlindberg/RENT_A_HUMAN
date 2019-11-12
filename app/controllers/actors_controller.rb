@@ -1,4 +1,5 @@
-class ActorController < ApplicationsController
+class ActorsController < ApplicationsController
+  skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :set_actor, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -38,7 +39,7 @@ class ActorController < ApplicationsController
 
   private
   def set_actor
-    @actor = actor.find(params[:id])
+    @actor = Actor.find(params[:id])
   end
 
   def actor_params
