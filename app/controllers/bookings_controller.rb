@@ -1,4 +1,4 @@
-class BookingController < ApplicationsController
+class BookingsController < ApplicationsController
   def new
     @booking = Booking.new
   end
