@@ -17,9 +17,16 @@
         <li class="nav-item">
           <%= link_to "Messages", "#", class: "nav-link" %>
         </li>
-      <% else %>
         <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          <%= render "shared/button-logout" %>
+           <%# link_to "Login", new_user_session_path, class: "nav-link" %>
+        </li>
+      <% else %>
+        <li>
+          <%= render "shared/button-signup" %>
+        </li>
+        <li>
+          <%= render "shared/button-login" %>
         </li>
       <% end %>
     </ul>

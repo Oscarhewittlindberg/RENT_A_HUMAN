@@ -1,6 +1,6 @@
-.btn.login {
-  background-color: $light-purple;
-  border-color: $purple-boder;
+.btn.signup {
+  background-color: #EC7859;
+  border-color: #F9CB7B;
   display: flex;
   margin: 10px;
   padding: 15px;
@@ -15,9 +15,8 @@
   border: 2px;
   border-sizing: border-box;
   border-radius: 100px;
+
   &:hover{
-    background: #957D9E;
+    background: #F9CB7B;
   }
 }
-
-
