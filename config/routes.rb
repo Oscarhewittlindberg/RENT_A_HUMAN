@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'pages#home'
+  root to: 'actors#index'
   get 'design', to: 'pages#design'
 
   resources :actors do
