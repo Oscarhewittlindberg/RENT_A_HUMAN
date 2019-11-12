@@ -8,6 +8,7 @@ class BookingController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
+    @booking.actor = Actor.find(params[:actor_id])
     if @booking.save
       redirect_to edit_booking_path(@booking)
     else
@@ -19,5 +20,11 @@ class BookingController < ApplicationController
     @booking.destroy
 
     redirect_to bookings_path
+  end
+
+  private
+
+  def booking_params
+    params.require(:booking).permit(:title, :description, :date, :duration, :image)
   end
 end

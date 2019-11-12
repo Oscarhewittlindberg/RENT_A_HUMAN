@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+<%= @booking.title %>
+  <%= @booking.actor.name %>
+  <%= @booking.description %>
+  <%= @booking.date %>
+  <%= @booking.duration %>
+  <!-- <%= @booking.status %> -->
+  <%= link_to 'Back', bookings_path, class: 'back' %>
