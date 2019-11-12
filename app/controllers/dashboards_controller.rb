@@ -1,4 +1,4 @@
-class DashboardsController < ApplicationController
+class DashboardsController < ApplicationsController
   def my_dashboard
     @my_actors = current_user.actors
     @my_bookings = Booking.where(renter: current_user)
