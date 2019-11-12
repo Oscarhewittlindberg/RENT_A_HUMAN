@@ -1,4 +1,4 @@
-class ActorController < ApplicationController
+class ActorController < ApplicationsController
   before_action :set_actor, only: [:show, :edit, :update, :destroy]
 
   def index
