@@ -1,29 +1,30 @@
 <p id="notice"><%= notice %></p>
 
+<div class="container">
 <div class="row">
-    <% if @actors.count == 0 %>
-      <div class="col-6">
-        <h1>There are no available actors</h1>
-        </div>
-      <% else %>
-        <% @actors.each do |actor| %>
-        <div class="col-4 cards">
-          <h1><%= link_to actor_path(actor) do  %>
-            <%= cl_image_tag actor.image, height: 200, width: 200, crop: :fill %></h1>
-            <% end %>
-            <h3><%= link_to actor.name%></h3>
-            <h5><%= actor.age %></h5>
-            <h5><%= actor.sex %></h5>
-            <h5><%= actor.location %></h5>
-            <p><%= actor.bio %></p>
-            <h5><%= actor.category %></h5>
-            <h5><%= actor.price %></h5>
-            <%= link_to "Visit", actor_path(actor), class: "btn"  %>
-        </div>
-      <% end %>
+  <% @actors.each do |actor| %>
+  <div class="col-3 s12 m7">
+    <%= link_to actor_path(actor) do  %>
+    <div class="card">
+      <div class="card-image" style="background-image: url(<%= actor.image %>);">
+      </div>
+      <div class="card-content">
+        <ul class="list">
+          <li><%= actor.name %></li>
+          <li><%= actor.age %></li>
+          <li><%= actor.sex %></li>
+          <li><%= actor.location %></li>
+          <li><%=  actor.bio %></li>
+          <li><%= actor.category %></li>
+          <li><%=  actor.price %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <% end %>
   <% end %>
 </div>
-
+</div>
 
 
 
