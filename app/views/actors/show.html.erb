@@ -11,4 +11,18 @@
 <%= @actor.price %>
 
 <%= link_to 'Back', actors_path  %>
-<%= link_to 'Book', new_actor_booking_path(@actor)  %>
+<%# link_to 'Book', new_actor_booking_path(@actor)  %>
+<p id="notice"><%= notice %></p>
+    <%= simple_form_for [@actor, @booking] do |f| %>
+
+      <div class="form-inputs">
+        <%= f.input :title %>
+        <%= f.input :description %>
+        <%= f.input :date %>
+        <%= f.input :duration %>
+      </div>
+
+      <div class="form-actions">
+        <%= f.submit "Book", class: "btn btn-primary my-2 my-sm-0 ml-2"%>
+      </div>
+  <% end %>

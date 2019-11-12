@@ -1,18 +1,18 @@
 class BookingsController < ApplicationController
-  def new
-    @booking = Booking.new
-  end
 
   def edit
   end
 
   def create
     @booking = Booking.new(booking_params)
-    @booking.actor = Actor.find(params[:actor_id])
+    @actor = Actor.find(params[:actor_id])
+    @booking.renter = current_user
+    @booking.price = @actor.price * @booking.duration
+    @booking.actor = @actor
     if @booking.save
-      redirect_to edit_booking_path(@booking)
+      redirect_to dashboard_path
     else
-      render :new
+      render template: 'actors/show'
     end
   end
 
@@ -25,6 +25,6 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:title, :description, :date, :duration, :image)
+    params.require(:booking).permit(:title, :description, :date, :duration)
   end
 end
