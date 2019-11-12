@@ -1,0 +1,131 @@
+.btn.standard {
+  border-color: #F9CB7B;
+  display: flex;
+  margin: 10px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px;
+  border-sizing: border-box;
+  border-radius: 100px;
+
+  &.signup
+    { background-color: $orange;
+    &.hover{
+    background: #F9CB7B;
+    }
+  }
+}
+
+.btn.standard {
+  display: flex;
+  margin: 10px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px;
+  border-sizing: border-box;
+  border-radius: 100px;
+
+  &.logout
+  { background-color: $light-purple;
+    &.hover{
+    background: #957D9E;
+  }
+  }
+}
+
+.btn.standard {
+  display: flex;
+  margin: 10px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px;
+  border-sizing: border-box;
+  border-radius: 100px;
+
+  &.login { background-color: $light-purple;
+    &.hover {
+    background: #957D9E;
+    }
+  }
+}
+
+
+.btn.standard {
+  display: flex;
+  margin: 10px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px;
+  border-sizing: border-box;
+  border-radius: 100px;
+
+  &.new-actor { background-color: $blue;
+    &.hover{
+    background: #71C8E8;
+    }
+  }
+}
+
+
+.form-actions {
+ display: flex;
+  justify-content: center;
+}
+
+input.btn {
+  display: flex;
+  justify-content: center;
+  background-color: $light-purple;
+  border-color: $purple-boder;
+  display: flex;
+  margin: 10px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px;
+  border-sizing: border-box;
+  border-radius: 100px;
+  background-color: $light-purple;
+
+
+  &:hover {
+    background: #957D9E;
+    color: white;
+    }
+
+}
+
