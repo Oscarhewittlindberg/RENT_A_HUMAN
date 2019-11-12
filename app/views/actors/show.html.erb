@@ -2,8 +2,7 @@
 
 <%= @actor.name %>
 <%# cl_image_path @actor.image %>
-<%= link_to "#{@actor.name}", actor_path(@actor) %>
-<%= cl_image_tag @actor.image, height: 300, width: 300, crop: :fill %>
+<%= cl_image_tag @actor.image, height: 300, width: 250, crop: :fill %>
 <%= @actor.age %>
 <%= @actor.sex %>
 <%= @actor.location %>
