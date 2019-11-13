@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container">
-<div class="row">
+<div class="row equal">
   <% @actors.each do |actor| %>
   <div class="col-3 s12 m7">
     <%= link_to actor_path(actor) do  %>
@@ -9,15 +9,13 @@
       <div class="card-image" style="background-image: url(<%= actor.image %>);">
       </div>
       <div class="card-content">
-        <ul class="list">
-          <li><%= actor.name %></li>
-          <li><%= actor.age %></li>
-          <li><%= actor.sex %></li>
-          <li><%= actor.location %></li>
-          <li><%=  actor.bio %></li>
-          <li><%= actor.category %></li>
-          <li><%=  actor.price %></li>
-        </ul>
+        <div class="list">
+          <div> <strong> Name: </strong> <%= actor.name %> (<%= actor.age %>, <%= actor.sex %>)   </div>
+          <div><strong>Location:</strong> <%= actor.location %></div>
+          <div> <strong>Bio:</strong> <em> <%= actor.bio%></em></div>
+          <div><strong>Category:</strong> <%= actor.category %></div>
+          <div><strong>Price:</strong> <%="#{actor.price} per hour" %></div>
+        </div>
       </div>
     </div>
   </div>
