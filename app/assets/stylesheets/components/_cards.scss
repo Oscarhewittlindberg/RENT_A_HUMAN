@@ -3,24 +3,18 @@
 }
 
 .card {
-  margin-bottom: 50px;
-  border-radius: 30px;
+  border-radius: 15px;
   color: black;
-
-}
-
-.card li {
-  list-style-type: none;
+  padding: 10px;
+  margin: 10px 10px;
+  height: 400px;
 }
 
 
 .card-image {
-  height: 200px;
+  min-height: 200px;
+  max-height: 200px;
   background-size: cover;
   background-position: center;
-  border-radius: 30px;
-}
-
-.card-title {
-  color: red;
+  border-radius: 12px 12px 0 0;
 }
