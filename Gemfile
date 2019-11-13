@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.6.3'
 
+gem 'dotenv-rails', groups: [:development, :test]
+
+
 gem "font-awesome-rails"
 
 gem 'bootsnap', require: false

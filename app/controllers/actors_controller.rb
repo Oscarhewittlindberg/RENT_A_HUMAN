@@ -19,8 +19,9 @@ class ActorsController < ApplicationController
 
   def create
     @actor = Actor.new(actor_params)
+    @actor.owner = current_user
     if @actor.save
-      redirect_to edit_actor_path(@actor)
+      redirect_to actor_path(@actor)
     else
       render :new
     end
