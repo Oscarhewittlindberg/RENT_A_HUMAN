@@ -42,6 +42,17 @@
       }
     }
 
+
+
+    &.show {
+    background-color: $yellow;
+    width: 200px;
+    margin-bottom: 30px;
+    &:hover {
+    background: #FFD027;
+     }
+    }
+
   &.listings {
     background-color: $orange;
     &:hover {
@@ -53,9 +64,12 @@
     background-color: $green;
     &:hover {
     background: #62DEB4;
+
       }
     }
 }
+
+
 
 .form-actions {
  display: flex;
