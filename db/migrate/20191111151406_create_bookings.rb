@@ -4,7 +4,7 @@ class CreateBookings < ActiveRecord::Migration[5.2]
       t.string :title
       t.string :location
       t.date :date
-      t.integer :duration
+      t.integer :duration, default: 1
       t.text :description
       t.integer :price
       t.references :actor, foreign_key: true

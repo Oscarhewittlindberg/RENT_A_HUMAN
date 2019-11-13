@@ -1,20 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<%= @actor.name %>
-<%# cl_image_path @actor.image %>
-<%= cl_image_tag @actor.image, height: 300, width: 250, crop: :fill %>
-<%= @actor.age %>
-<%= @actor.sex %>
-<%= @actor.location %>
-<%= @actor.bio %>
-<%= @actor.category %>
-<%= @actor.price %>
+<div class="container">
+  <div class="d-flex justify-content-around">
+      <div class="information">
+      <h2><%= @actor.name %></h2>
+      <p><strong>Age</strong>  <br> <%= @actor.age %></p>
+      <p><strong>Sex</strong> <br> <%= @actor.sex %></p>
+      <p><strong>Location</strong> <br> <%= @actor.location %></p>
+      <p><strong>Bio</strong>  <br> <%= @actor.bio %></p>
+      <p><strong>Category</strong>  <br> <%= @actor.category %></p>
+      <p><strong>Price</strong>  <br> <%= @actor.price %></p>
+      <%= link_to 'Back', actors_path, class: "btn standard show"  %>
+    </div>
 
-<%= link_to 'Back', actors_path  %>
-<%# link_to 'Book', new_actor_booking_path(@actor)  %>
-<p id="notice"><%= notice %></p>
+    <div class="info-image">
+    <%= cl_image_tag @actor.image, height: 300, width: 250, crop: :fill, class: "profile-image" %>
+    </div>
+
+
+  </div>
+  <div class="booking-form">
     <%= simple_form_for [@actor, @booking] do |f| %>
-
       <div class="form-inputs">
         <%= f.input :title %>
         <%= f.input :description %>
@@ -25,4 +31,13 @@
       <div class="form-actions">
         <%= f.submit "Book", class: "btn btn-primary my-2 my-sm-0 ml-2"%>
       </div>
-  <% end %>
+    <% end %>
+
+  </div>
+
+</div>
+
+
+
+
+<!-- <p id="notice"><%= notice %></p> -->
