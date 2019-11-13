@@ -3,11 +3,15 @@
 }
 
 .card {
+  display:flex;
+  text-align: left;
+  justify-content: center;
   border-radius: 15px;
   color: black;
-  padding: 10px;
-  margin: 10px 10px;
+  margin-top: 27px;
+  padding: 10px 7px;
   height: 400px;
+
 }
 
 
@@ -17,4 +21,10 @@
   background-size: cover;
   background-position: center;
   border-radius: 12px 12px 0 0;
+}
+
+.list {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 12px;
 }
