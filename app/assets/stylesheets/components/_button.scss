@@ -51,13 +51,14 @@
       }
     }
 
-}
     &.show {
     background-color: $yellow;
     width: 200px;
     margin-bottom: 30px;
     &:hover {
     background: #FFD027;
+     }
+    }
 
   &.listings {
     background-color: $orange;
