@@ -2,22 +2,22 @@
   text-decoration: none !important;
 }
 
+.container {
+
+}
+
 .card {
   display:flex;
-  text-align: left;
   justify-content: center;
-  border-radius: 15px;
+  text-align: left;
+  border-radius: 12px;
   color: black;
-  margin-top: 27px;
-  padding: 10px 7px;
-  height: 400px;
-
 }
 
 
 .card-image {
-  min-height: 200px;
-  max-height: 200px;
+  min-height: 140px;
+  max-height: 140px;
   background-size: cover;
   background-position: center;
   border-radius: 12px 12px 0 0;
@@ -28,3 +28,9 @@
   padding-bottom: 5px;
   font-size: 12px;
 }
+
+// .cards {
+//   display:grid
+//   grid-template: 1fr 1fr 1fr;
+//   grid-gap: 16px;
+// }
