@@ -1,30 +1,38 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-4 offset-col-4">
+        <p id="notice"><%= notice %></p>
+        <%= image_tag "fill_in.svg" , width: 400, height: 100, crop: :fill%>
 
-<%= simple_form_for(@actor) do |f| %>
-  <% if @actor.errors.any? %>
-    <div class="errors-container">
-      <ul>
-        <% @actor.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
+        <%= simple_form_for(@actor) do |f| %>
+          <% if @actor.errors.any? %>
+            <div class="errors-container">
+              <ul>
+                <% @actor.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+
+          <div class="form-inputs">
+            <%= f.input :name %>
+            <%= f.input :age %>
+            <%= f.input :sex %>
+            <%= f.input :category %>
+            <%= f.input :location %>
+            <%= f.input :price %>
+            <%= f.input :bio %>
+            <%= f.input :image %>
+            <%= f.input :image_cache, as: :hidden %>
+          </div>
+
+          <div class="form-actions">
+            <%= f.submit "Save", class: "btn standard new-actor my-2 my-sm-0 ml-2"%>
+
+          </div>
         <% end %>
-      </ul>
     </div>
-  <% end %>
-
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :age %>
-    <%= f.input :sex %>
-    <%= f.input :category %>
-    <%= f.input :location %>
-    <%= f.input :price %>
-    <%= f.input :bio %>
-    <%= f.input :image %>
-    <%= f.input :image_cache, as: :hidden %>
   </div>
-
-  <div class="form-actions">
-    <%= f.submit "Save", class: "btn btn-primary my-2 my-sm-0 ml-2"%>
-  </div>
-<% end %>
+</div>
 
