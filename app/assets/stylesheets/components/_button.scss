@@ -18,40 +18,46 @@
 
   &.signup
     { background-color: $orange;
-    &.hover {
+    &:hover {
     background: #F9CB7B;
       }
     }
 
   &.logout
   { background-color: $light-purple;
-    &.hover {
+    &:hover {
     background: #957D9E;
       }
     }
 
   &.logout
   { background-color: $light-purple;
-    &.hover {
+    &:hover {
     background: #957D9E;
       }
     }
 
   &.login { background-color: $light-purple;
-    &.hover {
+    &:hover {
     background: #957D9E;
       }
     }
 
   &.new-actor { background-color: $blue;
-    &.hover {
+    &:hover {
     background: #71C8E8;
       }
     }
+
+  &.landing-page {
+    background-color: $yellow;
+    width: 200px;
+    margin-bottom: 30px;
+    &:hover {
+    background: #FFD027;
+      }
+    }
 }
-
-
-
 
 .form-actions {
  display: flex;
