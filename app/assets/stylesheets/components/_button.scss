@@ -1,7 +1,8 @@
 .btn.standard {
   border-color: #F9CB7B;
   display: flex;
-  margin: 10px;
+  margin-left: 13px;
+  margin-right: 5px;
   padding: 15px;
   align-items: center;
   justify-content: center;
@@ -9,90 +10,47 @@
   font-family: 'Roboto', sans-serif;
   color: white;
   letter-spacing: 1px;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 15px;
   border: 2px;
   border-sizing: border-box;
-  border-radius: 100px;
+  border-radius: 10px;
 
   &.signup
     { background-color: $orange;
-    &.hover{
+    &.hover {
     background: #F9CB7B;
+      }
     }
-  }
-}
-
-.btn.standard {
-  display: flex;
-  margin: 10px;
-  padding: 15px;
-  align-items: center;
-  justify-content: center;
-  min-height: 20px;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  letter-spacing: 1px;
-  font-weight: bold;
-  font-size: 15px;
-  border: 2px;
-  border-sizing: border-box;
-  border-radius: 100px;
 
   &.logout
   { background-color: $light-purple;
-    &.hover{
+    &.hover {
     background: #957D9E;
-  }
-  }
-}
+      }
+    }
 
-.btn.standard {
-  display: flex;
-  margin: 10px;
-  padding: 15px;
-  align-items: center;
-  justify-content: center;
-  min-height: 20px;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  letter-spacing: 1px;
-  font-weight: bold;
-  font-size: 15px;
-  border: 2px;
-  border-sizing: border-box;
-  border-radius: 100px;
+  &.logout
+  { background-color: $light-purple;
+    &.hover {
+    background: #957D9E;
+      }
+    }
 
   &.login { background-color: $light-purple;
     &.hover {
     background: #957D9E;
+      }
     }
-  }
-}
-
-
-.btn.standard {
-  display: flex;
-  margin: 10px;
-  padding: 15px;
-  align-items: center;
-  justify-content: center;
-  min-height: 20px;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  letter-spacing: 1px;
-  font-weight: bold;
-  font-size: 15px;
-  border: 2px;
-  border-sizing: border-box;
-  border-radius: 100px;
 
   &.new-actor { background-color: $blue;
-    &.hover{
+    &.hover {
     background: #71C8E8;
+      }
     }
-  }
 }
+
+
 
 
 .form-actions {
@@ -114,7 +72,7 @@ input.btn {
   font-family: 'Roboto', sans-serif;
   color: white;
   letter-spacing: 1px;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 15px;
   border: 2px;
   border-sizing: border-box;
