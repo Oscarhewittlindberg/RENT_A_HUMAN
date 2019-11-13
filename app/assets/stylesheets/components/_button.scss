@@ -1,5 +1,5 @@
 .btn.standard {
-  border-color: #F9CB7B;
+  height: 35px;
   display: flex;
   margin-left: 13px;
   margin-right: 5px;
@@ -14,7 +14,7 @@
   font-size: 15px;
   border: 2px;
   border-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 5px;
 
   &.signup
     { background-color: $orange;
@@ -42,14 +42,7 @@
       }
     }
 
-  &.landing-page {
-    background-color: $yellow;
-    width: 200px;
-    margin-bottom: 30px;
-    &:hover {
-    background: #FFD027;
-      }
-    }
+
 
     &.show {
     background-color: $yellow;
@@ -87,7 +80,6 @@ input.btn {
   display: flex;
   justify-content: center;
   background-color: $light-purple;
-  border-color: $purple-boder;
   display: flex;
   margin: 10px;
   padding: 15px;
