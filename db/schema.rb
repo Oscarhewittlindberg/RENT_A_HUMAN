@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2019_11_12_123555) do
     t.string "title"
     t.string "location"
     t.date "date"
-    t.integer "duration"
+    t.integer "duration", default: 1
     t.text "description"
     t.integer "price"
     t.bigint "actor_id"
