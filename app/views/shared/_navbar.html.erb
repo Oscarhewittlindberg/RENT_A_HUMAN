@@ -9,6 +9,12 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
+        <li class="nav-item">
+            <%= link_to "listings",actors_path , class: "btn standard listings btn-inactive" %>
+        </li>
+        <li class="nav-item">
+            <%= link_to "dashboard", dashboard_path , class: "btn standard dashboard btn-inactive" %>
+        </li>
         <li>
           <%= link_to "Create new listing", new_actor_path, class: "btn standard new-actor btn-inactive" %>
         </li>

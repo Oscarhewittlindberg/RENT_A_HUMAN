@@ -19,14 +19,7 @@
   &.signup
     { background-color: $orange;
     &:hover {
-    background: #F9CB7B;
-      }
-    }
-
-  &.logout
-  { background-color: $light-purple;
-    &:hover {
-    background: #957D9E;
+    background: #F7A652;
       }
     }
 
@@ -55,6 +48,20 @@
     margin-bottom: 30px;
     &:hover {
     background: #FFD027;
+      }
+    }
+
+  &.listings {
+    background-color: $orange;
+    &:hover {
+    background: #F7A652;
+      }
+    }
+
+   &.dashboard {
+    background-color: $green;
+    &:hover {
+    background: #62DEB4;
       }
     }
 }
