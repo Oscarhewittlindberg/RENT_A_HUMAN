@@ -57,7 +57,18 @@
     background: #FFD027;
       }
     }
+
+    &.show {
+    background-color: $yellow;
+    width: 200px;
+    margin-bottom: 30px;
+    &:hover {
+    background: #FFD027;
+      }
+    }
 }
+
+
 
 .form-actions {
  display: flex;
