@@ -1,11 +1,31 @@
-.landing-text {
-  font-weight: 500;
-  justify-content: center;
-  margin-bottom: 15px;
-  font-size: 30px;
+.jumbotron {
+    top: 0;
+    background-size: 50% auto;
+    display: block;
+    background: url("connection.svg") no-repeat center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+
 }
 
-img.landing-image {
-  width: 345px;
+.btn-primary {
+    background-color: $yellow;
+    width: 200px;
+    border: none;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    &:hover {
+    background: #FFD027;
+    }
+}
+
+.landing-card-image {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
 }
 
