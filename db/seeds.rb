@@ -60,15 +60,6 @@ friend = Actor.new(name: "Eric  Welch", age: 21, sex: "Male", location: Faker::A
 friend.remote_image_url = "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.selfstoragefinders.com%2Fblog%2Fwp-content%2Fuploads%2F2013%2F11%2Fhipstercoffee.jpg&f=1&nofb=1"
 friend.save
 #others
-Actor.create!(name: "Amy  Parr", age: 57, sex: "Female", location: Faker::Address.city, bio: "I have experience being a mom", category: "Mother", price: 130, owner: carla)
-Actor.create!(name: "Julia  Fraser", age: 43, sex: "Female", location: Faker::Address.city, bio: "I have experience being a grandma", category: "Grandmother", price: 340, owner: carla)
-Actor.create!(name: "Adrian Arnold", age: 80, sex: "Male", location: Faker::Address.city, bio: "I have experience being a grandpa", category: "Grandfather", price: 110, owner: oscar)
-Actor.create!(name: "Gabrielle  Wright", age: 29, sex: "Female", location: Faker::Address.city, bio: "I have experience being a girlfriend", category: "Girlfriend", price: 90, owner: carla)
-Actor.create!(name: "Donna  Young", age: 18, sex: "Female", location: Faker::Address.city, bio: "I have experience being a sister", category: "Sister", price: 160, owner: carla)
-Actor.create!(name: "Natalie  Paterson", age: 43, sex: "Female", location: Faker::Address.city, bio: "I have experience being a chef", category: "Chef", price: 600, owner: jules)
-Actor.create!(name: "Mary White", age: 40, sex: "Female", location: Faker::Address.city, bio: "I have experience being a friend", category: "Friend", price: 10, owner: carla)
-Actor.create!(name: "Andrea Vaughan", age: 32, sex: "Female", location: Faker::Address.city, bio: "I have experience being a sister", category: "Sister", price: 20, owner: carla)
-
 
 
 
