@@ -1,18 +1,79 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row justify-content-center">
+
+    <div class="card-welcome">
+      Explore available actors
+    </div>
+
+  </div>
+
+  <div class="row justify-content-center">
+    <% @actors.each do |actor| %>
+    <div class="col-6">
+      <%= link_to actor_path(actor),class: "card-link" do  %>
+        <div class="card-actor d-flex">
+          <div class="card-info-container">
+            <div class="actor-category">
+              <%= actor.category %>
+            </div>
+            <div class="card-info">
+
+              <div class="actor-name">
+                <%= actor.name %>
+              </div>
+
+              <div class="actor-age">
+                <%= actor.age %> years
+              </div>
+
+              <div class="location">
+                Curently living in <br>
+                <strong class=""><%= actor.location.upcase %></strong>
+              </div>
+
+          </div>
+
+          </div>
+
+          <div class="card-image" style="background-image: url(<%= actor.image %>)">
+            <div class="actor-price">
+              <%= actor.price %> DKK
+            </div>
+          </div>
+
+        </div>
+      <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+ -->
+<!-- <p id="notice"><%= notice %></p>
 
 <div class="container">
-<div class="row equal">
+<div class="row justify-content-center">
   <% @actors.each do |actor| %>
-  <div class="col-3 s12 m7">
+  <div class="col-4 s12 m7">
     <%= link_to actor_path(actor) do  %>
     <div class="card">
       <div class="card-image" style="background-image: url(<%= actor.image %>);">
       </div>
       <div class="card-content">
         <div class="list">
-          <div> <strong> Name: </strong> <%= actor.name %> (<%= actor.age %>, <%= actor.sex %>)   </div>
+          <div><%= actor %></div>
+          <hr>
+          <div> <strong> Age: </strong><%= actor.age %></div>
           <div><strong>Location:</strong> <%= actor.location %></div>
-          <div> <strong>Bio:</strong> <em> <%= actor.bio%></em></div>
           <div><strong>Category:</strong> <%= actor.category %></div>
           <div><strong>Price:</strong> <%="#{actor.price} per hour" %></div>
         </div>
@@ -22,7 +83,5 @@
     <% end %>
   <% end %>
 </div>
-</div>
-
-
+</div> -->
 
