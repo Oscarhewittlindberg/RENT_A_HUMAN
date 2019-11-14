@@ -1,0 +1,21 @@
+
+.showpage-wrapper {
+  width: 60%;
+  height: 100%;
+  padding-top: 10px;
+
+  .showpage-card {
+    background-color: white;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .show-card {
+      padding: 15px;
+    }
+    .show-card-image {
+      border-radius: 15px;
+      padding-top: 15px;
+    }
+  }
+}
