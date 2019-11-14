@@ -1,13 +1,32 @@
-.jumbotron {
+.landing-header {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    position: relative;
     top: 0;
     background-size: 50% auto;
-    display: block;
-    background: url("connection.svg") no-repeat center;
+    background: url("nature.jpg") no-repeat center;
+    background-size: cover;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
 
+    h1 {
+     font-weight: bold;
+    }
+
+
+    p {
+      font-size: 21px;
+      margin-bottom: 20px;
+    }
 }
 
+h2 {
+  font-size: 38px !important;
+  font-weight: bold !important;
+}
 .btn-primary {
     background-color: $yellow;
     width: 200px;
@@ -27,5 +46,16 @@
   margin-right: auto;
   width: 80%;
 
+}
+
+#contact {
+  margin: 3.5rem 0;
+}
+
+.card-title {
+  font-weight: bold;
+}
+.card-text {
+  font-size: 15px;
 }
 
