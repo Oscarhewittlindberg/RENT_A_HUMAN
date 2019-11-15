@@ -1,0 +1,79 @@
+
+  <!-- <div class="dashboard">
+      <p id="notice"><%= notice %></p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <p class="text-success"><strong>Current bookings</strong></p>
+          <% if @my_current_bookings.empty? %>
+            <p>You have no current bookings</p>
+          <% else @my_current_bookings.each do |my_booking| %>
+              <% if my_booking&.date >= DateTime.now %>
+              <li class="list-group-item">
+                  <%= my_booking.title %>
+                  <%= my_booking.actor.name %>
+                  <%= my_booking.date %>
+              </li>
+                <% end %>
+              <% end %>
+            <% end %>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div>
+          <p class="text-secondary"><strong>Past bookings</strong></p>
+          <% if @my_past_bookings.empty? %>
+            <p>You have no past bookings</p>
+              <% else @my_past_bookings.each do |my_booking| %>
+               <% if my_booking&.date < DateTime.now %>
+                <li class="list-group-item">
+                    <%= my_booking.title %>
+                    <%= my_booking.actor.name %>
+                    <%= my_booking.date %>
+                </li>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+        </li>
+
+ -->
+
+
+      <!-- <li class="list-group-item">
+          <div>
+            <p class="text-info"><strong>My actors current bookings</strong></p>
+
+            <% if @my_actors_current_bookings.empty? %>
+              <p>Your actors have no current bookings</p>
+              <% else @my_actors_current_bookings.each do |my_actors_booking| %>
+                <% if my_actors_booking&.date >= DateTime.now %>
+                    <li class="list-group-item">
+                    <%= my_actors_booking.title %>
+                    <%= my_actors_booking.actor.name %>
+                    <%= my_actors_booking.date %>
+                    </li>
+                  <% end %>
+                <% end %>
+              <% end %>
+            </div>
+        </li>
+        <li class="list-group-item">
+          <p class="text-body"><strong>My actors past bookings</strong></p>
+          <% if @my_actors_past_bookings.empty? %>
+            <p>Your actors have no past bookings</p>
+                <% @my_actors_past_bookings.each do |my_actors_booking| %>
+              <% if my_actors_booking&.date < DateTime.now %>
+                  <li class="list-group-item">
+                  <%= my_actors_booking.title %>
+                  <%= my_actors_booking.actor.name %>
+                  <%= my_actors_booking.date %>
+                  </li>
+              <% end %>
+                <% end %>
+             <% end %>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</div>
